@@ -6,7 +6,7 @@
 #    By: mterkhoy <mterkhoy@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/08/17 22:01:09 by marc              #+#    #+#              #
-#    Updated: 2020/10/07 13:29:51 by mterkhoy         ###   ########.fr        #
+#    Updated: 2020/10/07 15:58:39 by mterkhoy         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -43,11 +43,13 @@ SRC =	ft_isalnum.c	\
 		ft_putnbr_fd.c	\
 		ft_putendl_fd.c	\
 		ft_strtrim.c	\
+		ft_substr.c		\
 		ft_lstnew.c		\
 		ft_lstadd_front.c	\
 		ft_lstsize.c	\
 		ft_lstlast.c	\
 		ft_lstadd_back.c
+
 OBJ = $(SRC:.c=.o)
 
 all: $(NAME)

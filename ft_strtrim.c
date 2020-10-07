@@ -6,7 +6,7 @@
 /*   By: mterkhoy <mterkhoy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/04 22:40:05 by mterkhoy          #+#    #+#             */
-/*   Updated: 2020/10/07 15:00:29 by mterkhoy         ###   ########.fr       */
+/*   Updated: 2020/10/07 15:49:24 by mterkhoy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ static int	ft_isinset(char c, const char *set)
 	{
 		if (*set == c)
 			return (1);
-		set ++;
+		set++;
 	}
 	return (0);
 }
@@ -37,7 +37,7 @@ static int	ft_getlen(const char *s1, const char *set)
 	return (j - i + 1);
 }
 
-char 		*ft_strtrim(const char *s1, const char *set)
+char		*ft_strtrim(const char *s1, const char *set)
 {
 	int		len;
 	int		i;
