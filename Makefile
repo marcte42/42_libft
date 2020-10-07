@@ -6,7 +6,7 @@
 #    By: mterkhoy <mterkhoy@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/08/17 22:01:09 by marc              #+#    #+#              #
-#    Updated: 2020/10/07 16:47:41 by mterkhoy         ###   ########.fr        #
+#    Updated: 2020/10/07 19:41:00 by mterkhoy         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -40,6 +40,7 @@ SRC =	ft_isalnum.c	\
 		ft_calloc.c		\
 		ft_itoa.c		\
 		ft_strjoin.c	\
+		ft_split.c		\
 		ft_putchar_fd.c	\
 		ft_putstr_fd.c	\
 		ft_putnbr_fd.c	\

@@ -1,0 +1,67 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mterkhoy <mterkhoy@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/10/07 19:40:06 by mterkhoy          #+#    #+#             */
+/*   Updated: 2020/10/07 21:01:32 by mterkhoy         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "libft.h"
+
+static size_t	ft_word_count(char const *s, char c)
+{
+	size_t	i;
+	size_t	wc;
+
+	i = -1;
+	while (s[++i])
+		if (s[i] != c && (s[i + 1] == c || !s[i + 1]))
+			wc++;
+	return (wc);
+}
+
+char			*ft_strduptosep(const char *s1, char c, size_t *index)
+{
+	char	*dst;
+	size_t	i;
+	size_t	len;
+
+	len = 0;
+	while (s1[len] && s1[len] != c)
+		len++;
+	if (!(dst = (char *)malloc((len + 1) * sizeof(dst))))
+		return (0);
+	i = -1;
+	while (++i < len)
+	{
+		dst[i] = s1[i];
+		(*index)++;
+	}
+	dst[i] = '\0';
+	return (dst);
+}
+
+char			**ft_split(char const *s, char c)
+{
+	char	**tab;
+	size_t	wc;
+	size_t	i;
+	size_t	j;
+
+	wc = ft_word_count(s, c);
+	if (!(tab = malloc((wc + 1) * sizeof(char *))))
+		return (0);
+	j = 0;
+	i = -1;
+	while (s[++i])
+	{
+		if ((i == 0 && s[i] != c) || (i != 0 && s[i] != c && s[i - 1] == c))
+			tab[j++] = ft_strduptosep(&s[i], c, &i);
+	}
+	tab[j] = 0;
+	return (tab);
+}
