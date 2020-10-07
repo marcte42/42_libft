@@ -1,34 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_substr.c                                        :+:      :+:    :+:   */
+/*   ft_strcat.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mterkhoy <mterkhoy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/10/07 15:57:26 by mterkhoy          #+#    #+#             */
-/*   Updated: 2020/10/07 17:08:13 by mterkhoy         ###   ########.fr       */
+/*   Created: 2020/10/07 16:35:18 by mterkhoy          #+#    #+#             */
+/*   Updated: 2020/10/07 17:07:23 by mterkhoy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_substr(char const *s, unsigned int start, size_t len)
+char	*ft_strcat(char *s1, const char *s2)
 {
-	size_t	l;
-	size_t	i;
-	char	*str;
+	size_t i;
 
-	l = 0;
-	while (s[start + l] && l < len)
-		l++;
-	if (!(str = malloc((l + 1) * sizeof(char))))
-		return (0);
 	i = 0;
-	while (i < l)
-	{
-		str[i] = s[start + i];
+	while (s1[i])
 		i++;
+	while (*s2)
+	{
+		s1[i] = *s2;
+		i++;
+		s2++;
 	}
-	str[i] = '\0';
-	return (str);
+	return (s1);
 }

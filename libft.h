@@ -6,7 +6,7 @@
 /*   By: mterkhoy <mterkhoy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/17 22:12:30 by marc              #+#    #+#             */
-/*   Updated: 2020/10/07 16:05:18 by mterkhoy         ###   ########.fr       */
+/*   Updated: 2020/10/07 16:47:43 by mterkhoy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,12 +46,15 @@ char			*ft_strchr(const char *s, int c);
 char			*ft_strrchr(const char *s, int c);
 char			*ft_strnstr(const char *haystack,
 							const char *needle, size_t len);
+char			*ft_strcat(char *s1, const char *s2);
 char			*ft_strdup(const char *s1);
 void			*ft_calloc(size_t count, size_t size);
 
 char			*ft_itoa(int n);
+char			*ft_strjoin(char const *s1, char const *s2);
 char			*ft_strtrim(const char *s1, const char *set);
 char			*ft_substr(char const *s, unsigned int start, size_t len);
+char			*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void			ft_putchar_fd(char c, int fd);
 void			ft_putstr_fd(char *s, int fd);
 void			ft_putnbr_fd(int n, int fd);
