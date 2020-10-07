@@ -6,7 +6,7 @@
 /*   By: mterkhoy <mterkhoy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/19 23:01:54 by marc              #+#    #+#             */
-/*   Updated: 2020/10/04 12:19:01 by mterkhoy         ###   ########.fr       */
+/*   Updated: 2020/10/07 20:06:18 by mterkhoy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,6 @@ char	*ft_strdup(const char *s1)
 	i = -1;
 	while (++i < len)
 		dst[i] = s1[i];
+	dst[i] = '\0';
 	return (dst);
 }
