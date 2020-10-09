@@ -6,7 +6,7 @@
 /*   By: mterkhoy <mterkhoy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/07 19:40:06 by mterkhoy          #+#    #+#             */
-/*   Updated: 2020/10/07 21:01:32 by mterkhoy         ###   ########.fr       */
+/*   Updated: 2020/10/09 18:39:23 by mterkhoy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ char			*ft_strduptosep(const char *s1, char c, size_t *index)
 	len = 0;
 	while (s1[len] && s1[len] != c)
 		len++;
-	if (!(dst = (char *)malloc((len + 1) * sizeof(dst))))
+	if (!(dst = (char *)malloc((len + 1) * sizeof(char))))
 		return (0);
 	i = -1;
 	while (++i < len)
@@ -58,10 +58,8 @@ char			**ft_split(char const *s, char c)
 	j = 0;
 	i = -1;
 	while (s[++i])
-	{
 		if ((i == 0 && s[i] != c) || (i != 0 && s[i] != c && s[i - 1] == c))
 			tab[j++] = ft_strduptosep(&s[i], c, &i);
-	}
 	tab[j] = 0;
 	return (tab);
 }

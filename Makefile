@@ -6,7 +6,7 @@
 #    By: mterkhoy <mterkhoy@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/08/17 22:01:09 by marc              #+#    #+#              #
-#    Updated: 2020/10/09 13:15:14 by mterkhoy         ###   ########.fr        #
+#    Updated: 2020/10/09 13:47:26 by mterkhoy         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -55,7 +55,10 @@ SRC =	ft_isalnum.c	\
 		ft_lstsize.c	\
 		ft_lstlast.c	\
 		ft_lstadd_back.c	\
-		ft_lstiter.c
+		ft_lstdelone.c	\
+		ft_lstclear.c	\
+		ft_lstiter.c	\
+		ft_lstmap.c
 
 OBJ = $(SRC:.c=.o)
 
