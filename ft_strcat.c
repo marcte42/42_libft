@@ -6,7 +6,7 @@
 /*   By: mterkhoy <mterkhoy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/07 16:35:18 by mterkhoy          #+#    #+#             */
-/*   Updated: 2020/10/07 17:07:23 by mterkhoy         ###   ########.fr       */
+/*   Updated: 2020/10/09 12:46:36 by mterkhoy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,6 @@
 
 char	*ft_strcat(char *s1, const char *s2)
 {
-	size_t i;
-
-	i = 0;
-	while (s1[i])
-		i++;
-	while (*s2)
-	{
-		s1[i] = *s2;
-		i++;
-		s2++;
-	}
+	ft_strcpy(s1 + ft_strlen(s1), s2);
 	return (s1);
 }

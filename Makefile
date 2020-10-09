@@ -6,7 +6,7 @@
 #    By: mterkhoy <mterkhoy@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/08/17 22:01:09 by marc              #+#    #+#              #
-#    Updated: 2020/10/07 19:41:00 by mterkhoy         ###   ########.fr        #
+#    Updated: 2020/10/09 12:48:10 by mterkhoy         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,8 +21,10 @@ SRC =	ft_isalnum.c	\
 		ft_strlen.c		\
 		ft_tolower.c	\
 		ft_toupper.c	\
+		ft_strcpy.c		\
 		ft_strlcpy.c	\
 		ft_strcat.c		\
+		ft_strlcat.c	\
 		ft_strdup.c		\
 		ft_strncmp.c	\
 		ft_atoi.c		\
