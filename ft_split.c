@@ -6,7 +6,7 @@
 /*   By: mterkhoy <mterkhoy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/07 19:40:06 by mterkhoy          #+#    #+#             */
-/*   Updated: 2020/10/09 18:39:23 by mterkhoy         ###   ########.fr       */
+/*   Updated: 2020/10/10 08:48:58 by mterkhoy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@ static size_t	ft_word_count(char const *s, char c)
 	size_t	i;
 	size_t	wc;
 
+	wc = 0;
 	i = -1;
 	while (s[++i])
 		if (s[i] != c && (s[i + 1] == c || !s[i + 1]))
@@ -37,11 +38,9 @@ char			*ft_strduptosep(const char *s1, char c, size_t *index)
 		return (0);
 	i = -1;
 	while (++i < len)
-	{
 		dst[i] = s1[i];
-		(*index)++;
-	}
 	dst[i] = '\0';
+	(*index) += len - 1;
 	return (dst);
 }
 
