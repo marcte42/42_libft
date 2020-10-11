@@ -6,7 +6,7 @@
 #    By: mterkhoy <mterkhoy@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/08/17 22:01:09 by marc              #+#    #+#              #
-#    Updated: 2020/10/10 11:26:27 by mterkhoy         ###   ########.fr        #
+#    Updated: 2020/10/11 15:24:32 by mterkhoy         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -69,7 +69,7 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	ar rc $(NAME) $(OBJ)
 
-bonus: fclean $(OBJ) $(OBJ_BONUS)
+bonus: $(OBJ) $(OBJ_BONUS)
 	ar rc $(NAME) $(OBJ) $(OBJ_BONUS)
 
 clean:
@@ -80,3 +80,4 @@ fclean: clean
 
 re: fclean all
 
+.PHONY: all bonus clean fclean re
