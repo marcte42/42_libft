@@ -6,7 +6,7 @@
 /*   By: mterkhoy <mterkhoy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/04 11:28:25 by mterkhoy          #+#    #+#             */
-/*   Updated: 2020/10/04 12:08:07 by mterkhoy         ###   ########.fr       */
+/*   Updated: 2020/10/12 20:32:18 by mterkhoy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ char	*ft_itoa(int n)
 		len++;
 		nbr = -n;
 	}
-	if (!(tab = malloc((len + 1) * sizeof(char))))
+	if (!(tab = (char *)malloc((len + 1) * sizeof(char))))
 		return (0);
 	tab[len--] = 0;
 	if (nbr == 0)
