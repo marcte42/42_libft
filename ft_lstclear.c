@@ -6,13 +6,13 @@
 /*   By: mterkhoy <mterkhoy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/09 13:29:31 by mterkhoy          #+#    #+#             */
-/*   Updated: 2020/10/09 14:05:48 by mterkhoy         ###   ########.fr       */
+/*   Updated: 2020/10/14 21:36:21 by marc             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_lstclear(t_list **lst, void (*del)(void *))
+void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
 	t_list *tmp;
 

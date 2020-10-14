@@ -6,13 +6,13 @@
 /*   By: mterkhoy <mterkhoy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/09 12:44:45 by mterkhoy          #+#    #+#             */
-/*   Updated: 2020/10/13 12:13:05 by mterkhoy         ###   ########.fr       */
+/*   Updated: 2020/10/14 21:35:45 by marc             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strcpy(char * dst, const char * src)
+char	*ft_strcpy(char *dst, const char *src)
 {
 	size_t i;
 

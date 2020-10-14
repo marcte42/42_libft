@@ -6,7 +6,7 @@
 /*   By: mterkhoy <mterkhoy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/17 22:12:30 by marc              #+#    #+#             */
-/*   Updated: 2020/10/09 16:49:46 by mterkhoy         ###   ########.fr       */
+/*   Updated: 2020/10/14 21:36:55 by marc             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ char			*strchr(const char *s, int c);
 size_t			ft_strlen(const char *s);
 int				ft_tolower(int c);
 int				ft_toupper(int c);
-char			*ft_strcpy(char * dst, const char * src);
+char			*ft_strcpy(char *dst, const char *src);
 size_t			ft_strlcpy(char *dst, const char *src, size_t dstsize);
 int				ft_strncmp(const char *s1, const char *s2, size_t n);
 int				ft_atoi(char *str);
