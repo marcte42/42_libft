@@ -6,7 +6,7 @@
 /*   By: mterkhoy <mterkhoy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/07 19:40:06 by mterkhoy          #+#    #+#             */
-/*   Updated: 2020/10/13 17:47:56 by mterkhoy         ###   ########.fr       */
+/*   Updated: 2020/11/02 14:49:55 by mterkhoy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,6 +51,8 @@ char			**ft_split(char const *s, char c)
 	size_t	i;
 	size_t	j;
 
+	if (!s)
+		return (0);
 	wc = ft_word_count(s, c);
 	if (!(tab = (char **)malloc((wc + 1) * sizeof(char *))))
 		return (0);
