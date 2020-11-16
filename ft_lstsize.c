@@ -6,7 +6,7 @@
 /*   By: mterkhoy <mterkhoy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/07 08:55:45 by mterkhoy          #+#    #+#             */
-/*   Updated: 2020/10/07 15:48:09 by mterkhoy         ###   ########.fr       */
+/*   Updated: 2020/11/16 18:31:39 by mterkhoy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ int		ft_lstsize(t_list *lst)
 {
 	int i;
 
+	if (!lst)
+		return (0);
 	i = 0;
 	while (lst)
 	{
