@@ -6,7 +6,7 @@
 /*   By: mterkhoy <mterkhoy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/04 09:55:09 by mterkhoy          #+#    #+#             */
-/*   Updated: 2020/10/09 16:20:44 by mterkhoy         ###   ########.fr       */
+/*   Updated: 2020/11/18 15:17:21 by mterkhoy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,5 @@ void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 		if (((unsigned char *)src)[i] == (unsigned char)c)
 			return (dst + i + 1);
 	}
-	return (0);
+	return (NULL);
 }
